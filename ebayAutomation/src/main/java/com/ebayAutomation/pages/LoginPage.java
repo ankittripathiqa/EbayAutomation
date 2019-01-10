@@ -11,6 +11,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.support.PageFactory;
 
 import com.ebayAutomation.utils.AndroidDriverManager;
+import com.ebayAutomation.utils.ExcelFileReader;
 import com.ebayAutomation.utils.Utils;
 
 public class LoginPage  extends Utils {
@@ -48,12 +49,12 @@ public class LoginPage  extends Utils {
 		btn_useEmail.click();
 		}	
 	
-	public void submitUsernandpwd()
+	public void submitUsernandpwd(String user,String pwd)
 	{
 		 txtbx_username.clear();
-		 txtbx_username.setValue("Ankittripathi.qa@gmail.com");;
+		 txtbx_username.setValue(user);
 		 txtbx_pwd.clear();
-		 txtbx_pwd.setValue("Test@123");
+		 txtbx_pwd.setValue(pwd);
 		 btn_Login.click();
 	}
 	

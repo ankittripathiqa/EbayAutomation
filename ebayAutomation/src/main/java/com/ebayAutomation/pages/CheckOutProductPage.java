@@ -18,6 +18,7 @@ import org.openqa.selenium.support.PageFactory;
 
 
 
+
 import com.ebayAutomation.utils.Utils;
 
 public class CheckOutProductPage extends Utils{
@@ -67,17 +68,25 @@ public class CheckOutProductPage extends Utils{
 	@AndroidFindBy(xpath="//android.widget.Button[@resource-id='com.ebay.mobile:id/button_add_to_cart']")
 	public MobileElement btn_addcart;
 	
-	public void addToCart()
+	public void searchforProduct(String product)
 	{
 		txtbx_search.click();
 		waitUntilElementVisible(txtbx_searchPhone);
-		txtbx_searchPhone.sendKeys("iphone 6");
+		txtbx_searchPhone.sendKeys(product);
 		waitUntilElementToBeClickable(txtbx_selectPhone);
 		txtbx_selectPhone.click();
+		}
+	
+	public void clickOnProduct()
+	{
 		waitUntilElementToBeClickable(btn_phone);
 		btn_phone.click();
+		
+	}
+	
+	public void addphoneincart()
+	{
 		driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Buy it now\"))");
-		driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Colour\"))");
 		waitUntilElementToBeClickable(btn_colour);
 		btn_colour.click();
 		waitUntilElementToBeClickable(sel_gol);
@@ -92,8 +101,9 @@ public class CheckOutProductPage extends Utils{
 		btn_pro.click();
 		waitUntilElementToBeClickable(btn_addcart);
 		btn_addcart.click();
-		
 	}
+
+
 	
 }
 	
