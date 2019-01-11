@@ -1,6 +1,5 @@
 package TestRun;
 
-import javax.net.ssl.SSLEngineResult.Status;
 
 import io.appium.java_client.android.AndroidDriver;
 
@@ -20,6 +19,7 @@ import com.ebayAutomation.utils.ExtLogger;
 
 
 
+
 public class ScriptRunner {
 	
 	AndroidDriver androidDriver;
@@ -27,11 +27,12 @@ public class ScriptRunner {
 	CheckOutProductPage checkOutProductPage;
 	ExtLogger log;
 	
-	@BeforeMethod
+	@BeforeClass
 	public void startUp() throws Throwable
 	{  
 		AndroidDriverManager.initiateAndroidDriver();
 		androidDriver=AndroidDriverManager.getAndroidDriverDriver();
+		log=new ExtLogger(ScriptRunner.class.toString());
 	    loginPage=new LoginPage(androidDriver);
 	    checkOutProductPage=new CheckOutProductPage(androidDriver);
 	    log.testStepLog("Before Method");
@@ -46,7 +47,6 @@ public class ScriptRunner {
 		
 	
 	}
-	
 	@Test(priority=2)
 	public void submitUserandpwd()
 	{
@@ -75,6 +75,7 @@ public class ScriptRunner {
 		log.stepLog("Add product in the cart");
 	}
 	
+		
 	
 	
 

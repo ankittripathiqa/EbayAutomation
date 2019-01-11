@@ -6,7 +6,7 @@
       <class name="TestRun.ScriptRunner">
         <methods>
           <include name="startUp"/>
-          <include name="validation"/>
+          <include name="addTocart"/>
         </methods>
       </class> <!-- TestRun.ScriptRunner -->
     </classes>

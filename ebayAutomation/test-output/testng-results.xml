@@ -1,20 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
+    <line>
+      <![CDATA[Step:=>  Before Method]]>
+    </line>
+    <line>
+      <![CDATA[Login to the application]]>
+    </line>
+    <line>
+      <![CDATA[fill the user information and click on submit]]>
+    </line>
+    <line>
+      <![CDATA[Search for the product]]>
+    </line>
+    <line>
+      <![CDATA[Select the product]]>
+    </line>
+    <line>
+      <![CDATA[Add product in the cart]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="93298" started-at="2019-01-08T16:03:59Z" finished-at="2019-01-08T16:05:32Z">
+  <suite name="Default suite" duration-ms="73208" started-at="2019-01-11T16:17:56Z" finished-at="2019-01-11T16:19:09Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="93298" started-at="2019-01-08T16:03:59Z" finished-at="2019-01-08T16:05:32Z">
+    <test name="Default test" duration-ms="73208" started-at="2019-01-11T16:17:56Z" finished-at="2019-01-11T16:19:09Z">
       <class name="TestRun.ScriptRunner">
-        <test-method status="PASS" signature="startUp()[pri:0, instance:TestRun.ScriptRunner@d8355a8]" name="startUp" is-config="true" duration-ms="26939" started-at="2019-01-08T21:33:59Z" finished-at="2019-01-08T21:34:26Z">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:TestRun.ScriptRunner@d8355a8]" name="startUp" is-config="true" duration-ms="23770" started-at="2019-01-11T21:47:56Z" finished-at="2019-01-11T21:48:20Z">
           <reporter-output>
+            <line>
+              <![CDATA[Step:=>  Before Method]]>
+            </line>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method status="PASS" signature="validation()[pri:0, instance:TestRun.ScriptRunner@d8355a8]" name="validation" duration-ms="66321" started-at="2019-01-08T21:34:26Z" finished-at="2019-01-08T21:35:32Z">
+        <test-method status="PASS" signature="clickOnLoginTab()[pri:1, instance:TestRun.ScriptRunner@d8355a8]" name="clickOnLoginTab" duration-ms="5020" started-at="2019-01-11T21:48:20Z" finished-at="2019-01-11T21:48:25Z">
           <reporter-output>
+            <line>
+              <![CDATA[Login to the application]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- validation -->
+        </test-method> <!-- clickOnLoginTab -->
+        <test-method status="PASS" signature="submitUserandpwd()[pri:2, instance:TestRun.ScriptRunner@d8355a8]" name="submitUserandpwd" duration-ms="14280" started-at="2019-01-11T21:48:25Z" finished-at="2019-01-11T21:48:39Z">
+          <reporter-output>
+            <line>
+              <![CDATA[fill the user information and click on submit]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- submitUserandpwd -->
+        <test-method status="PASS" signature="searchTheptoduct()[pri:3, instance:TestRun.ScriptRunner@d8355a8]" name="searchTheptoduct" duration-ms="14818" started-at="2019-01-11T21:48:39Z" finished-at="2019-01-11T21:48:54Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Search for the product]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- searchTheptoduct -->
+        <test-method status="PASS" signature="selectTheproduct()[pri:4, instance:TestRun.ScriptRunner@d8355a8]" name="selectTheproduct" duration-ms="2427" started-at="2019-01-11T21:48:54Z" finished-at="2019-01-11T21:48:57Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Select the product]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- selectTheproduct -->
+        <test-method status="PASS" signature="addTocart()[pri:5, instance:TestRun.ScriptRunner@d8355a8]" name="addTocart" duration-ms="12802" started-at="2019-01-11T21:48:57Z" finished-at="2019-01-11T21:49:09Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Add product in the cart]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addTocart -->
       </class> <!-- TestRun.ScriptRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

@@ -86,7 +86,7 @@ public class CheckOutProductPage extends Utils{
 	
 	public void addphoneincart()
 	{
-		driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Buy it now\"))");
+		driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"BUY IT NOW\"))");
 		waitUntilElementToBeClickable(btn_colour);
 		btn_colour.click();
 		waitUntilElementToBeClickable(sel_gol);
