@@ -49,7 +49,7 @@ public class AndroidDriverManager {
         capabilities.setCapability("platformName", MobileOperatingSystem);
         capabilities.setCapability("platformVersion", AndroidVersion);
         capabilities.setCapability(MobileCapabilityType.NO_RESET, "True");
-        capabilities.setCapability("app", System.getProperty("user.dir")+ "\\App\\eBay.apk");
+        capabilities.setCapability("app", System.getProperty("user.dir")+ "//App//com.ebay.mobile.apk");
         capabilities.setCapability("appPackage", AppPackages);
         capabilities.setCapability("appActivity", AppActivities);
         capabilities.setCapability("autoGrantPermission", "true");
@@ -68,7 +68,7 @@ public class AndroidDriverManager {
         try {
             config = new Properties();
             String filePath = System.getProperty("user.dir")
-                    + "\\config\\" + name;
+                    + "//config//" + name;
             System.out.println("Properties File" + filePath);
             if (isFilePath(filePath)) {
                 FileInputStream fileinp = new FileInputStream(filePath);

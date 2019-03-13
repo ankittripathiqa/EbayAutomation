@@ -14,12 +14,6 @@ import com.ebayAutomation.utils.AndroidDriverManager;
 import com.ebayAutomation.utils.ExcelFileReader;
 import com.ebayAutomation.utils.ExtLogger;
 
-
-
-
-
-
-
 public class ScriptRunner {
 	
 	AndroidDriver androidDriver;

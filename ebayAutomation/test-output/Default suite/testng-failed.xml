@@ -6,7 +6,11 @@
       <class name="TestRun.ScriptRunner">
         <methods>
           <include name="startUp"/>
+          <include name="submitUserandpwd"/>
+          <include name="selectTheproduct"/>
+          <include name="searchTheptoduct"/>
           <include name="addTocart"/>
+          <include name="clickOnLoginTab"/>
         </methods>
       </class> <!-- TestRun.ScriptRunner -->
     </classes>

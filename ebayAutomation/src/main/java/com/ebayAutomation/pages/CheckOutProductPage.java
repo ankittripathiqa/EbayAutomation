@@ -16,11 +16,6 @@ import org.openqa.selenium.support.PageFactory;
 
 
 
-
-
-
-import com.ebayAutomation.utils.Utils;
-
 public class CheckOutProductPage extends Utils{
 	
 	AndroidDriver<WebElement> driver;
