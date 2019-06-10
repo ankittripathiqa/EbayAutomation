@@ -43,20 +43,21 @@ public class AndroidDriverManager {
         System.out.println(AndroidVersion);
         System.out.println(AppPackages);
         System.out.println(AppActivities);
+        System.out.println( System.getProperty("user.dir")+ "/App/eBay.apk");
 
         capabilities = new DesiredCapabilities();
         capabilities.setCapability("deviceName", MobileDeviceName);
         capabilities.setCapability("platformName", MobileOperatingSystem);
         capabilities.setCapability("platformVersion", AndroidVersion);
         capabilities.setCapability(MobileCapabilityType.NO_RESET, "True");
-        capabilities.setCapability("app", System.getProperty("user.dir")+ "//App//com.ebay.mobile.apk");
+        capabilities.setCapability("app", System.getProperty("user.dir")+ "/App/com.ebay.mobile.apk");
         capabilities.setCapability("appPackage", AppPackages);
         capabilities.setCapability("appActivity", AppActivities);
         capabilities.setCapability("autoGrantPermission", "true");
         capabilities.setCapability("newCommandTimeout", 1000);
         capabilities.setCapability("autoAcceptAlerts", true);
         capabilities.setCapability("autoDismissAlerts", true);
-        capabilities.setCapability("automationName", "Appium");
+        capabilities.setCapability("automationName", "UiAutomator2");
 
         androidDriver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
         androidDriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);

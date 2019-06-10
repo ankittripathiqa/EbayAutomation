@@ -40,11 +40,14 @@
             <version>3.17</version>
         </dependency>
 		
-		<dependency>
-			<groupId>io.appium</groupId>
-			<artifactId>java-client</artifactId>
-			<version>6.1.0</version>
-		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.appium/java-client -->
+<dependency>
+    <groupId>io.appium</groupId>
+    <artifactId>java-client</artifactId>
+    <version>7.0.0</version>
+</dependency>
+
+
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>

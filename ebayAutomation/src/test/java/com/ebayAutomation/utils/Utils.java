@@ -4,8 +4,10 @@ package com.ebayAutomation.utils;
 
 
 import java.time.Duration;
+import java.util.HashMap;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -50,6 +52,8 @@ public class Utils {
 	        wait.until(ExpectedConditions.elementToBeClickable(webElement));
 	    }
 	    
+ 
+	      
 	 
 }
 	 

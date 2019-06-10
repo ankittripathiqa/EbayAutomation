@@ -1,5 +1,7 @@
 package com.ebayAutomation.pages;
 
+import java.util.HashMap;
+
 import javax.rmi.CORBA.Util;
 
 import io.appium.java_client.AppiumDriver;
@@ -12,6 +14,7 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import io.appium.java_client.touch.offset.PointOption;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.PageFactory;
 
 
@@ -51,16 +54,16 @@ public class CheckOutProductPage extends Utils{
 	@AndroidFindBy(xpath="(//android.widget.Spinner[@resource-id='com.ebay.mobile:id/spinner_selection_option'])[2]")
    	public MobileElement btn_cap;
 	
-	@AndroidFindBy(xpath="//android.widget.TextView[@text='16GB']")
+	@AndroidFindBy(xpath="//android.widget.TextView[@text='16 GB']")
    	public MobileElement btn_16gb;
 	
-	@AndroidFindBy(xpath="(//android.widget.Spinner[@resource-id='com.ebay.mobile:id/spinner_selection_option'])[3]")
+	@AndroidFindBy(xpath="//android.widget.Button[@text='ADD TO CART']")
    	public MobileElement btn_pack;
 	
-	@AndroidFindBy(xpath="//android.widget.TextView[@text='Yes']")
-   	public MobileElement btn_pro;
+	@AndroidFindBy(xpath="//android.widget.Button[@text='GO TO CART']")
+   	public MobileElement btn_pro; 
 	
-	@AndroidFindBy(xpath="//android.widget.Button[@resource-id='com.ebay.mobile:id/button_add_to_cart']")
+	@AndroidFindBy(xpath="//android.widget.Button[@text='com.ebay.mobile:id/button_add_to_cart']")
 	public MobileElement btn_addcart;
 	
 	public void searchforProduct(String product)
@@ -81,7 +84,7 @@ public class CheckOutProductPage extends Utils{
 	
 	public void addphoneincart()
 	{
-		driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"BUY IT NOW\"))");
+		
 		waitUntilElementToBeClickable(btn_colour);
 		btn_colour.click();
 		waitUntilElementToBeClickable(sel_gol);
@@ -90,13 +93,17 @@ public class CheckOutProductPage extends Utils{
 		btn_cap.click();
 		waitUntilElementToBeClickable(btn_16gb);
 		btn_16gb.click();
+		driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"ADD TO CART\"))");
 		waitUntilElementToBeClickable(btn_pack);
 		btn_pack.click();
 		waitUntilElementToBeClickable(btn_pro);
 		btn_pro.click();
-		waitUntilElementToBeClickable(btn_addcart);
-		btn_addcart.click();
-	}
+	
+    }
+    
+      
+
+
 
 
 	
